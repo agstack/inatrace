@@ -16,7 +16,7 @@
 [![License: MPL-2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen?style=flat-square)](LICENSE)
 [![Part of AgStack](https://img.shields.io/badge/Part_of-AgStack_Foundation-2ea44f?style=flat-square)](https://github.com/agstack)
 
-*An open-source, blockchain-backed system that digitizes agricultural supply chains — connecting farmers, cooperatives, processors, and buyers with full transparency, quality assurance, and fair pricing. Funded by BMZ and implemented by GIZ.*
+*INATrace is a digital open-source solution designed to enhance the economic conditions of smallholder farmers by improving the traceability of global supply chains. Funded by the German Federal Ministry for Economic Cooperation and Development (BMZ) and implemented by GIZ, INATrace provides an efficient internal management system for cooperatives, digitally stores supply chain data, and supports compliance with regulations like the EU Deforestation Regulation (EUDR).*
 
 </div>
 
@@ -90,7 +90,7 @@ agstack/inatrace/                    ← You are here
 │  App         │  (Angular)   │  (Java/Spring)  │  (Hyperledger)    │
 │              │              │                 │                    │
 │ React Native │ TypeScript   │ Java 17         │ Fabric Network    │
-│ Expo         │ Angular 10+  │ Spring Boot     │ Chaincode (Go)    │
+│ Expo         │ Angular 10   │ Spring Boot     │ Chaincode (Go)    │
 │ MapBox       │              │ MySQL 8.4       │ CouchDB            │
 │              │              │ REST API        │                    │
 ├──────────────┴──────────────┴─────────────────┴────────────────────┤
@@ -120,7 +120,6 @@ The core API server powering INATrace. Handles user management, product configur
 |---|---|
 | **Stack** | Java 17, Spring Boot, Maven, MySQL 8.4 |
 | **License** | MPL-2.0 |
-| **Last Updated** | 2025-12-24 |
 | **Top Maintainers** | [@pece-a](https://github.com/pece-a) (495 commits), [@RebernikNejc](https://github.com/RebernikNejc) (126), [@MusicDin](https://github.com/MusicDin) (96) |
 
 **Quick Start:**
@@ -146,9 +145,8 @@ The web-based user interface for managing products, companies, value chains, sta
 
 | | |
 |---|---|
-| **Stack** | Angular 10+, TypeScript, Node 14 |
+| **Stack** | Angular 10, TypeScript, Node 14 |
 | **License** | MPL-2.0 |
-| **Last Updated** | 2025-12-24 |
 | **Top Maintainers** | [@pece-a](https://github.com/pece-a) (987 commits), [@RebernikNejc](https://github.com/RebernikNejc) (175), [@borce-paspalovski](https://github.com/borce-paspalovski) (145) |
 
 **Quick Start:**
@@ -176,7 +174,6 @@ The field-level mobile app for cooperatives and farmers — GPS polygon mapping,
 | **Stack** | React Native, Expo, TypeScript, MapBox |
 | **Platforms** | Android ([Google Play](https://play.google.com/store/apps/details?hl=en-US&id=com.sunesis.inatrace)) · iOS ([App Store](https://apps.apple.com/us/app/inatrace/id6572305162)) |
 | **License** | MPL-2.0 |
-| **Last Updated** | 2025-12-24 |
 | **Top Maintainers** | [@pinokokol](https://github.com/pinokokol) (120 commits), [@pece-a](https://github.com/pece-a) (9) |
 
 **Key Features:**
@@ -209,7 +206,6 @@ The blockchain layer — a Hyperledger Fabric network with smart contracts (chai
 | **Stack** | Hyperledger Fabric, Docker, CouchDB, Go chaincode |
 | **Based On** | [BasicNetwork-2.0](https://github.com/adhavpavan/BasicNetwork-2.0.git), [Fabric Samples](https://github.com/hyperledger/fabric-samples) |
 | **License** | MPL-2.0 |
-| **Last Updated** | 2025-11-20 |
 | **Documentation** | [Hyperledger Fabric Docs](https://hyperledger-fabric.readthedocs.io/) |
 
 ---
@@ -259,18 +255,6 @@ INATrace has an **existing but limited integration** with the [AgStack Asset Reg
 | 🟡 No preparation for Asset Registry v2.0 (federated Hub+Node, ListIDs) | Medium |
 
 **👉 Full technical specification:** [ASSET_REGISTRY_INTEGRATION.md](ASSET_REGISTRY_INTEGRATION.md)
-
----
-
-## 📊 Project Stats
-
-| Metric | Backend | Frontend | Mobile | Blockchain | **Total** |
-|--------|---------|----------|--------|------------|-----------|
-| ⭐ Stars | 8 | 1 | 0 | 1 | **10** |
-| 🍴 Forks | 6 | 5 | 2 | 3 | **16** |
-| 🐛 Open Issues | 4 | 0 | 0 | 0 | **4** |
-| 📅 Created | 2020-11 | 2020-11 | 2024-12 | 2020-11 | — |
-| 📝 Last Push | 2025-12-24 | 2025-12-24 | 2025-12-24 | 2025-11-20 | — |
 
 ---
 
@@ -456,7 +440,7 @@ We welcome contributions of all kinds — code, documentation, specs, and ideas!
 | **Cross-repo enhancement proposal** or technical spec | This meta repo — open an issue or submit a spec PR |
 | **Governance, charter, or process** proposal | This meta repo |
 | **Integration design** (Asset Registry, EUDR, etc.) | This meta repo — see [specs section](#-specifications--enhancement-docs) |
-| **General question or discussion** | This meta repo — open a discussion or issue |
+| **General question or discussion** | The [INATrace mailing list](https://lists.agstack.org/g/inatrace) |
 
 ### How to contribute
 
